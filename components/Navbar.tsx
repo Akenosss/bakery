@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
     return(
-        <header className="max-w-[1920px] w-full fixed py-4 bg-white">
+        <header className="max-w-[1920px] w-full z-30 fixed py-4 bg-white">
             <nav className="flex justify-between items-center">
                 <Link href="/" className="ml-60">
                     <Image
@@ -16,7 +16,7 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <div className="flex gap-6">
+                <div className="flex gap-6 ml-30">
                     <Link href="/" className="hover:underline underline-offset-2 active:underline underline-offset-2">Home</Link>
                     <Link href="/menu" className="hover:underline underline-offset-2 active:underline underline-offset-2">Menu</Link>
                     <Link href="/about" className="hover:underline underline-offset-2 active:underline underline-offset-2">About</Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Image src="/icons8-caddie-24.png" alt="caddie" width={20} height={20}/>
                         <h6 className="text-orange-800">0</h6>
                     </div>
-                    <Link href="/order" className="border border-black px-20 py-3 hover:bg-zinc-700 duration-300 hover:text-white">Order Online</Link>
+                    <Link href="/" className="border border-black px-20 py-3 hover:bg-zinc-700 duration-300 hover:text-white">Order Online</Link>
                 </div>
             </nav>
         </header>
