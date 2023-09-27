@@ -2,7 +2,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
       <main>
-          <div className="main-color py-96 max-w-screen">
+          <div className="relative main-color py-96 max-w-screen">
                 <div className="absolute top-0 bottom-0 left-0 right-0">
                     <h1 className="absolute z-10 top-1/4 mt-10 inset-center text-white text-9xl font-serif">Take a Bread</h1>
                     <Image
