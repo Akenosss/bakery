@@ -40,3 +40,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.philo-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
