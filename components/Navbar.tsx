@@ -16,7 +16,7 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <div className="flex gap-6 ml-30">
+                <div className="flex gap-6 ml-36">
                     <Link href="/" className="hover:underline underline-offset-2 active:underline underline-offset-2">Home</Link>
                     <Link href="/menu" className="hover:underline underline-offset-2 active:underline underline-offset-2">Menu</Link>
                     <Link href="/about" className="hover:underline underline-offset-2 active:underline underline-offset-2">About</Link>
