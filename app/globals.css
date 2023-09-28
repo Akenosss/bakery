@@ -46,3 +46,25 @@
   justify-content: space-between;
   margin-bottom: 3.5rem;
 }
+
+.custombutton-white {
+  border: 1px solid black;
+}
+
+.custombutton-white:hover {
+  background-color: #3f3f3f;
+  color: black;
+  transition-duration: 300ms;
+}
+
+.custombutton-black {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.custombutton-black:hover {
+  background-color: #ffffff;
+  color: black;
+  transition-duration: 300ms;
+}

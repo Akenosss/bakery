@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Image src="/icons8-caddie-24.png" alt="caddie" width={20} height={20}/>
                         <h6 className="text-orange-800">0</h6>
                     </div>
-                    <Link href="/" className="border border-black px-20 py-3 hover:bg-zinc-700 duration-300 hover:text-white">Order Online</Link>
+                    <Link href="/" className="custombutton-white px-20 py-3">Order Online</Link>
                 </div>
             </nav>
         </header>
