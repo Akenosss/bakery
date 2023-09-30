@@ -1,4 +1,4 @@
-import {Hero} from "@/components";
+import {Footer, Hero} from "@/components";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -38,15 +38,14 @@ export default function Home() {
             </section>
         </div>
 
-        <div className="relative box-border">
-            <div className="absolute top-1/2 inset-center z-20 box-content bg-white py-20 px-56 text-center">
+        <section className="flex justify-center text-center bg-fixed bg-center barista-img py-80">
+            <div className="absolute inset-center z-20 box-content bg-white py-20 px-56 text-center">
                 <Image src="/home/cup.png" alt="coffee cup" width={100} height={100} className="ml-10"/>
                 <h1 className="text-4xl font-light mb-6">Daily Deal</h1>
                 <h1 className="mb-6">Bring your own cup</h1>
                 <h1 className="italic underline font-bold">and get a 15% discount</h1>
             </div>
-            <Image src="/home/coffee_table.webp" alt="coffee table" width={2000} height={2000} className="bg-scroll"/>
-        </div>
+        </section>
 
         <div className="text-center text-5xl font-extralight mt-40 mb-52">Our Philosophy</div>
         <section className="relative box-border flex flex-col mx-96">
@@ -96,9 +95,18 @@ export default function Home() {
             <Link href="/" className="custombutton-white px-24 py-3 my-32">About us</Link>
         </div>
 
-        <div className="relative main-color py-96 max-w-screen">
-                oui
-        </div>
+        <section className="flex justify-center text-center bg-fixed bg-center barista-img py-24">
+            <div className="bg-white py-20 px-24">
+                <Image src="/home/chief-hat.png" alt="chief hat" width={70} height={70} className="ml-32"/>
+                <h1 className="text-4xl font-light mb-3">Join us</h1>
+                <h1 className="mb-3">Are you baker, pastry chef or barista?</h1>
+                <h1 className="mb-3">Send us your CV to <strong className="italic underline">mymail@mailservice.com</strong></h1>
+                <h1 className="mb-14">or click below to see open positions</h1>
+                <Link href="/" className="custombutton-white py-3 px-14">Careers</Link>
+            </div>
+        </section>
+
+        <Footer />
     </main>
   )
 }
