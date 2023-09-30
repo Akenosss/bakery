@@ -35,6 +35,10 @@
   background-color: rgb(194, 147, 100);
 }
 
+.second-color {
+  background-color: #875B5A;
+}
+
 .inset-center {
   position: absolute;
   left: 50%;
@@ -53,8 +57,8 @@
 
 .custombutton-white:hover {
   background-color: #3f3f3f;
-  color: black;
-  transition-duration: 300ms;
+  color: white;
+  transition-duration: 200ms;
 }
 
 .custombutton-black {
@@ -66,5 +70,13 @@
 .custombutton-black:hover {
   background-color: #ffffff;
   color: black;
-  transition-duration: 300ms;
+  transition-duration: 200ms;
+}
+
+.barista-img {
+  background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
+}
+
+.filter {
+  -webkit-filter: brightness(0) invert(1);
 }
