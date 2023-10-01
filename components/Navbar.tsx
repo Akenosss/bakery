@@ -17,10 +17,10 @@ const Navbar = () => {
                 </Link>
 
                 <div className="flex gap-6 ml-20">
-                    <Link href="/" className="hover:underline underline-offset-2 active:underline underline-offset-2">Home</Link>
-                    <Link href="/menu" className="hover:underline underline-offset-2 active:underline underline-offset-2">Menu</Link>
-                    <Link href="/about" className="hover:underline underline-offset-2 active:underline underline-offset-2">About</Link>
-                    <Link href="/contact" className="hover:underline underline-offset-2 active:underline underline-offset-2">Contact</Link>
+                    <Link href="/" className="hover:underline underline-offset-2">Home</Link>
+                    <Link href="/menu" className="hover:underline underline-offset-2">Menu</Link>
+                    <Link href="/about" className="hover:underline underline-offset-2">About</Link>
+                    <Link href="/contact" className="hover:underline underline-offset-2">Contact</Link>
                 </div>
 
                 <div className="flex gap-28 items-center mr-16">
