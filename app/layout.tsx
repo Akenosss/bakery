@@ -1,8 +1,7 @@
 import './globals.css'
 import React from "react";
 
-import Navbar from "@/components/Navbar";
-import {Footer} from "@/components";
+import {Footer, Navbar} from "@/components";
 
 
 export const metadata = {
