@@ -2,6 +2,7 @@ import './globals.css'
 import React from "react";
 
 import Navbar from "@/components/Navbar";
+import {Footer} from "@/components";
 
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className="relative">
       <Navbar />
       {children}
+      <Footer />
       </body>
     </html>
   )
