@@ -80,3 +80,7 @@
 .filter {
   -webkit-filter: brightness(0) invert(1);
 }
+
+.border1 {
+  border: 1px solid;
+}

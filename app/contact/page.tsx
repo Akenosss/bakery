@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 
 export default function page() {
-
     const handleClick = (e: React.MouseEvent<HTMLElement>) => {
         if(e.currentTarget.innerText === 'Baker') {
                 // @ts-ignore
@@ -148,13 +147,21 @@ export default function page() {
 
             <div>
                 <section className="flex justify-center text-center bg-fixed bg-center barista-img py-24">
-                    <div className="bg-white py-20 px-24">
-                        <Image src="/home/chief-hat.png" alt="chief hat" width={70} height={70} className="ml-32"/>
-                        <h1 className="text-4xl font-light mb-3">Join us</h1>
-                        <h1 className="mb-3">Are you baker, pastry chef or barista?</h1>
-                        <h1 className="mb-3">Send us your CV to <strong className="italic underline">mymail@mailservice.com</strong></h1>
-                        <h1 className="mb-14">or click below to see open positions</h1>
-                        <Link href="/" className="custombutton-white py-3 px-14">Careers</Link>
+                    <div className="bg-white py-20 container mx-auto max-w-xl px-16 main-color text-white">
+                        <h1 className="text-3xl font-light mb-3">Drop us a line</h1>
+                        <div className="flex flex-col text-left border-b border-white mb-10">
+                            <h1 className="mb-2">Name:</h1>
+                            <input type="text" aria-label="full name" className="appearance-none bg-transparent border-none w-full"/>
+                        </div>
+                        <div className="flex flex-col text-left border-b border-white mb-10">
+                            <h1 className="mb-2">Email:</h1>
+                            <input type="email" aria-label="full email" className="appearance-none bg-transparent border-none w-full"/>
+                        </div>
+                        <div className="flex flex-col text-left border-b border-white mb-20">
+                            <h1 className="mb-2">Message:</h1>
+                            <input type="text" aria-label="message" className="appearance-none bg-transparent border-none w-full"/>
+                        </div>
+                        <input type="submit" className="cursor-pointer border1 border-white hover:bg-black hover:border-0 hover:duration-200 py-3 px-14" value="Send Message"></input>
                     </div>
                 </section>
             </div>
