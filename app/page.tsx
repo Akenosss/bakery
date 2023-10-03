@@ -1,4 +1,4 @@
-import {Hero, JoinUs, OurPhilosophy} from "@/components";
+import {Categories, Hero, JoinUs, OurPhilosophy} from "@/components";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -12,30 +12,12 @@ export default function Home() {
             <h5 className="font-light">All items are baked on the premises, so they are always fresh.</h5>
 
             <div className="flex flex-wrap justify-center gap-8 mt-10">
-                <Link href="/" className="custombutton-white px-14 py-3">Order Online</Link>
-                <Link href="/" className="custombutton-black px-14 py-3">See the menu</Link>
+                <Link href="#order" className="custombutton-white px-14 py-3 active:duration-500">Order Online</Link>
+                <Link href="/menu" className="custombutton-black px-14 py-3">See the menu</Link>
             </div>
 
-            <h1 className="mt-20 mb-14 text-4xl font-light">Our menu</h1>
-
-            <section className="flex flex-wrap justify-center gap-5 mb-40">
-                <Link href="/">
-                    <Image src="/home/croissant_3.jpg" alt="3 croissant" width={300} height={300}/>
-                    <h1 className="font-medium text-xl pt-4">Pastries</h1>
-                </Link>
-                <Link href="/">
-                    <Image src="/home/pie.jpg" alt="pie" width={300} height={300}/>
-                    <h1 className="font-medium text-xl pt-4">Pies</h1>
-                </Link>
-                <Link href="/">
-                    <Image src="/home/bread.jpg" alt="bread" width={300} height={300}/>
-                    <h1 className="font-medium text-xl pt-4">Breads</h1>
-                </Link>
-                <Link href="/">
-                    <Image src="/coffee_bean.jpg" alt="coffee bean" width={300} height={300}/>
-                    <h1 className="font-medium text-xl pt-4">Beverages</h1>
-                </Link>
-            </section>
+            <h1 id="order" className="mt-20 mb-14 text-4xl font-light">Our menu</h1>
+            <Categories />
         </div>
 
         <section className="flex justify-center text-center bg-fixed bg-center barista-img py-80">
@@ -48,6 +30,9 @@ export default function Home() {
         </section>
 
         <OurPhilosophy />
+        <div className="relative flex justify-center">
+            <Link href="/about" className="custombutton-white px-24 py-3 my-32">About us</Link>
+        </div>
         <JoinUs />
     </main>
   )

@@ -24,6 +24,7 @@ export default function page() {
             </section>
 
             <OurPhilosophy />
+            <div className="mb-28"></div>
 
             <div className="second-color text-white">
                 <h1 className="text-8xl font-extralight text-center pt-40 pb-14">Founders</h1>

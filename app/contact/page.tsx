@@ -108,7 +108,7 @@ export default function page() {
                                 <dd><time>9:00 am</time> - <time>5:00 pm</time></dd>
                             </div>
                             <p className="pb-6">555-555-5555</p>
-                            <Link href="/" className="border-solid border-2 border-white p-2 px-12 hover:bg-black hover:border-black duration-200">Nous trouver</Link>
+                            <Link href="/" id="career" className="border-solid border-2 border-white p-2 px-12 hover:bg-black hover:border-black duration-200">Nous trouver</Link>
                         </div>
                     </div>
                 </div>
