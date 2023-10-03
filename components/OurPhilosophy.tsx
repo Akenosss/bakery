@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const OurPhilosophy = () => {
     return (
@@ -48,9 +47,6 @@ const OurPhilosophy = () => {
                     className="absolute left-1/3 top-2/4 ml-16 z-10"
                 />
             </section>
-            <div className="relative flex justify-center">
-                <Link href="/" className="custombutton-white px-24 py-3 my-32">About us</Link>
-            </div>
         </div>
     )
 }

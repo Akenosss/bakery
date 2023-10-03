@@ -11,7 +11,7 @@ const JoinUs = () => {
                     <h1 className="mb-3">Are you baker, pastry chef or barista?</h1>
                     <h1 className="mb-3">Send us your CV to <strong className="italic underline">mymail@mailservice.com</strong></h1>
                     <h1 className="mb-14">or click below to see open positions</h1>
-                    <Link href="/" className="custombutton-white py-3 px-14">Careers</Link>
+                    <Link href="/contact/#career" className="custombutton-white py-3 px-14">Careers</Link>
                 </div>
             </section>
         </div>
